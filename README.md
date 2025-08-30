@@ -11,9 +11,14 @@
 
 ### Rápida
 
-- Para rodar o código em qualquer sistema é possível instalar o arquivo bin: 
+- Para rodar o código em qualquer sistema é possível instalar o arquivo bin: [Download do bin](https://raw.githubusercontent.com/Sansao77/eleicao_papa/main/eleicao_papa)
 
 ### Projeto completo (É preciso rodar utilizando Deno)
 
 - Pelo github clone:
-- Instalação via arquivo.zip: 
+
+    ```bash
+    git clone https://github.com/Sansao77/eleicao_papa.git
+    ```
+
+- Instalação via arquivo.zip: [Download do zip](https://github.com/Sansao77/eleicao_papa/archive/refs/heads/main.zip)
