@@ -42,13 +42,13 @@ function verificarVotacao(resultado: {votos: number[], total: number}){
     if(voto/resultado.total >= 2/3) return resultado.votos.indexOf(voto) + 1;
   }
 
-  return 0
+  return 0;
 }
 
 function processoVotacao(cardinais: Cardinal[]){
   let votos_totais = 0;
   while(true){
-    console.log("Lista de Cardinais Concorrentes:\n")
+    console.log("Lista de Cardinais Concorrentes:\n");
 
     console.log("Total de votos: " + votos_totais);
     for(const cardenal of cardinais){
@@ -57,11 +57,12 @@ function processoVotacao(cardinais: Cardinal[]){
 
     console.log("Qual cardinal gostaria de votar? (somente digite o número, caso queira terminar a votação digite 6)");
     const resposta = prompt("R:");
+    console.log(resposta);
     
     const id = (resposta !== null)? parseInt(resposta) : 0;
 
     if(id <= 0 || id > 6 || id === undefined){
-      console.log("O valor não é válido");
+      console.log("\nO número não é VALIDO! Retorne novamente\n");
     }
     else if(id === 6){
       return {votos: cardinais.map(x => x.quantidade_votos), total: votos_totais};
